@@ -6,6 +6,8 @@ import {Component} from '@angular/core';
 })
 
 export class TodoStoreComponent{
+    todoList:Array<string>;
     constructor(){
+        this.todoList = [];
     }
 }
