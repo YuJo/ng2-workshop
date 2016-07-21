@@ -1,0 +1,9 @@
+{
+  "globalDependencies": {
+    "core-js": "registry:dt/core-js#0.0.0+20160602141332",
+    "node": "registry:dt/node#6.0.0+20160514165920",
+    "reflect-metadata": "registry:dt/reflect-metadata#0.0.0+20160630155503",
+    "systemjs": "registry:dt/systemjs#0.19.29+20160702105636",
+    "zone.js": "registry:dt/zone.js#0.0.0+20160316155526"
+  }
+}
