@@ -6,10 +6,12 @@ import {Component} from '@angular/core';
 })
 
 export class TodoStoreComponent{
+    isDebug:boolean;
     newItem:string;
     todoList:Array<string>;
     constructor(){
         this.todoList = [];
+        this.isDebug = false;
     }
     addItem(){
         this.todoList.push(this.newItem);

@@ -3,9 +3,13 @@
     <input type="text" [(ngModel)]="newItem"/>
     <button class="pure-button" (click)="addItem()">新增</button>
 </form>
-json result:<br>
-<pre>{{todoList | json}}</pre>
+<input type="checkbox" [(ngModel)]="isDebug"/> 顯示Debug 
 <hr>
+<div *ngIf="isDebug">
+    json result:<br>
+    <pre>{{todoList | json}}</pre>
+<hr>
+</div>
 <table class="pure-table">
     <thead>
         <tr>
