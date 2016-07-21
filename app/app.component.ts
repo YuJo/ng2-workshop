@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector:'my-app',
-  template: `<h2>Hello World Ya</h2>`
+  selector:'todo-app',
+  template: `<h1>Hello World</h1>`
 })
 export class AppComponent {
   constructor() {
