@@ -1,7 +1,7 @@
 <h1>請輸入待辦事項</h1>
 <form class="pure-form">
     <input type="text" [value]="newItem"/>
-    <button class="pure-button">新增</button>
+    <button class="pure-button" (click)="addItem()">新增</button>
 </form>
 json result:<br>
 <pre>{{todoList | json}}</pre>

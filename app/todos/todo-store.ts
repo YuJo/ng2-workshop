@@ -11,4 +11,7 @@ export class TodoStoreComponent{
     constructor(){
         this.todoList = [];
     }
+    addItem(){
+        this.todoList.push(this.newItem);
+    }
 }
