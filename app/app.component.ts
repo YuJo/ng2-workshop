@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { TodoStoreComponent } from "./todos/todo-store.ts";
 
 @Component({
   selector:'todo-app',
-  template: `<h1>Hello World</h1>`
+  template: '<todo-store></todo-store>',
+  directives:[TodoStoreComponent]
 })
 export class AppComponent {
   constructor() {
