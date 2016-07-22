@@ -17,8 +17,8 @@
             <th>Text</th>
         </tr>
     </thead>
-    <tbody *ngFor="let idx = index;let item of todoList">
-        <tr>
+    <tbody>
+        <tr *ngFor="let idx = index;let item of todoList">
             <td>{{idx + 1}}</td>
             <td>{{item}}</td>
         </tr>
