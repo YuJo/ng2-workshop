@@ -6,7 +6,6 @@ import { TodoItemComponent } from './todo-item';
     templateUrl:'./todo-store.html',
     directives: [TodoItemComponent] 
 })
-
 export class TodoStoreComponent{
     isDebug:boolean;
     newItem:string;
@@ -17,5 +16,8 @@ export class TodoStoreComponent{
     }
     addItem(){
         this.todoList.push(this.newItem);
+    }
+    removeItem(idx:number){
+        this.todoList.splice(idx,1);
     }
 }

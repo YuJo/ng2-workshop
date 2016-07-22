@@ -20,7 +20,12 @@
     <tbody>
         <tr *ngFor="let idx = index;let item of todoList">
             <td>{{idx + 1}}</td>
-            <td><todo-item [todoItem]=item></todo-item></td>
+            <td>
+                <todo-item 
+                    [todoItem]="item" [todoIndex]="idx" 
+                    (remove)="removeItem($event)">
+                </todo-item>
+            </td>
         </tr>
     </tbody>
 </table>
