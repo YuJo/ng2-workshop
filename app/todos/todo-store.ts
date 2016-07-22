@@ -1,8 +1,10 @@
 import {Component} from '@angular/core';
+import { TodoItemComponent } from './todo-item';
 
 @Component({
     selector:'todo-store',
-    templateUrl:'./todo-store.html'
+    templateUrl:'./todo-store.html',
+    directives: [TodoItemComponent] 
 })
 
 export class TodoStoreComponent{
